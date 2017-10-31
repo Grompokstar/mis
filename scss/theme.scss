@@ -1,0 +1,153 @@
+@import "variables";
+@import "fonts";
+
+html, body {
+  font-family: "Proxima_Nova_Light", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  background-color: $bg-color;
+}
+
+.content {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 15px;
+
+  &.scrolled {
+    position: static;
+    height: 600px;
+  }
+
+  .main-text {
+    font-size: 32px;
+    line-height: 50px;
+    max-width: 720px;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+}
+
+.logo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+  padding: 40px 50px 20px 50px;
+  margin-bottom: auto;
+
+  .logo {
+    img {
+      height: 57px;
+    }
+  }
+
+  .email-contact {
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+
+    }
+  }
+}
+
+.strong-text {
+  font-family: "Proxima_Nova_Bold", Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  font-family: "Proxima_Nova_Bold", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  padding: 13px 50px;
+  background: linear-gradient(to right, $brand-color, $secondary-brand-color);
+  border-radius: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: linear-gradient(to right, darken($brand-color, 3%), darken($secondary-brand-color, 3%));
+  }
+}
+
+.partners-logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 113px;
+  margin-top: 100px;
+  flex-basis: 150px;
+  width: 80%;
+  margin-bottom: auto;
+
+  .logo-item {
+    margin:  10px auto;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    .main-text {
+      font-size: 26px;
+      line-height: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .partners-logo-row {
+    margin-top: 50px;
+  }
+
+  .logo-item {
+    img {
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .content {
+    .main-text {
+      font-size: 22px;
+      line-height: 34px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .partners-logo-row {
+    margin-top: 30px;
+  }
+
+  .logo-row {
+    padding-top: 30px;
+
+    .email-contact {
+      display: none;
+    }
+  }
+
+  .partners-logo-row {
+    .logo-item {
+      img {
+        height: 40px;
+      }
+    }
+  }
+}
+
+
+
