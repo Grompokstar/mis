@@ -110,5 +110,9 @@ html, body {
 
   .partners-logo-row .logo-item img {
     height: 40px; } }
+#try-it-modal {
+  color: #212529; }
+  #try-it-modal h4 {
+    font-size: 20px; }
 
 /*# sourceMappingURL=theme.css.map */
