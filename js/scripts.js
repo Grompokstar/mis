@@ -6,14 +6,14 @@ $(function(){
         $content = $('.content'),
         windowHeight = $(window).height();
 
-    if (windowHeight < 768) {
+    if (windowHeight < 700) {
       $content.addClass('scrolled');
     }
 
     $(window).resize(function(){
       windowHeight = $(window).height();
 
-      if (windowHeight < 768) {
+      if (windowHeight < 700) {
         $content.addClass('scrolled');
       } else {
         $content.removeClass('scrolled');
