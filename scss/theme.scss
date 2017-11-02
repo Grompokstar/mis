@@ -20,6 +20,7 @@ html, body {
   bottom: 0;
   left: 0;
   padding: 0 15px;
+  z-index: 2;
 
   &.scrolled {
     position: static;
@@ -48,16 +49,24 @@ html, body {
   margin-bottom: auto;
 
   .logo {
+    position: relative;
+
     img {
       height: 57px;
+      position: relative;
+      z-index: 10;
     }
   }
 
   .email-contact {
+    position: relative;
+
     a {
+      position: relative;
       color: #fff;
       text-decoration: none;
       font-size: 24px;
+      z-index: 5;
 
     }
   }
@@ -101,6 +110,20 @@ html, body {
     margin:  10px auto;
     padding: 0 15px;
   }
+}
+
+#three-container-1 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 1;
+}
+
+#three-container-2 {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  z-index: 1;
 }
 
 @media (max-width: 992px) {

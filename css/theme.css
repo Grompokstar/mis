@@ -25,7 +25,8 @@ html, body {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0 15px; }
+  padding: 0 15px;
+  z-index: 2; }
   .content.scrolled {
     position: static;
     height: 600px; }
@@ -45,12 +46,20 @@ html, body {
   width: 96%;
   padding: 40px 50px 20px 50px;
   margin-bottom: auto; }
-  .logo-row .logo img {
-    height: 57px; }
-  .logo-row .email-contact a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px; }
+  .logo-row .logo {
+    position: relative; }
+    .logo-row .logo img {
+      height: 57px;
+      position: relative;
+      z-index: 10; }
+  .logo-row .email-contact {
+    position: relative; }
+    .logo-row .email-contact a {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      z-index: 5; }
 
 .strong-text {
   font-family: "Proxima_Nova_Bold", Helvetica, Arial, sans-serif; }
@@ -84,6 +93,18 @@ html, body {
   .partners-logo-row .logo-item {
     margin: 10px auto;
     padding: 0 15px; }
+
+#three-container-1 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 1; }
+
+#three-container-2 {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  z-index: 1; }
 
 @media (max-width: 992px) {
   .content .main-text {
