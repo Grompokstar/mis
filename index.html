@@ -20,10 +20,15 @@
   <script type="text/javascript" src="js/CanvasRenderer.js"></script>
 
   <script type="text/javascript" src="js/my_scripts.js"></script>
+  <script type="text/javascript" src="js/translate.js"></script>
 </head>
 <body>
 
   <div class="content">
+    <div class="translate-toggle">
+      <div class="translate" id="en">en</div>
+      <div class="translate active" id="ru">ru</div>
+    </div>
     <div class="logo-row">
       <div class="logo">
         <div id="three-container-1"></div>
@@ -34,7 +39,7 @@
         <a href="mailto:go@yourwebservice.ru">go@yourwebservice.ru</a>
       </div>
     </div>
-    <div class="main-text">
+    <div class="main-text lang" data-key="mainText">
       Мы придумываем <span class="strong-text">идеи</span>, разрабатываем <span class="strong-text">дизайн</span>
       для&nbsp;информационных систем, социальных сервисов,
       интернет-магазинов и&nbsp;мобильных приложений. Мы создаем <span class="strong-text">новые технологии</span>
@@ -42,7 +47,7 @@
       Наши проекты всегда находят <span class="strong-text">отклик</span> в&nbsp;сердцах людей.
     </div>
     <div>
-      <button class="btn" data-toggle="modal" data-target="#try-it-modal">Написать нам</button>
+      <button class="btn lang" data-toggle="modal" data-target="#try-it-modal" data-key="contactUs">Написать нам</button>
     </div>
     <div class="partners-logo-row">
       <div class="logo-item"><img src="images/forapp.png"></div>

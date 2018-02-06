@@ -138,4 +138,18 @@ html, body {
   #try-it-modal h4 {
     font-size: 20px; }
 
+.translate-toggle {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 3;
+  opacity: 0.6;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 18px; }
+  .translate-toggle:hover {
+    opacity: 1; }
+  .translate-toggle .translate.active {
+    display: none; }
+
 /*# sourceMappingURL=theme.css.map */
