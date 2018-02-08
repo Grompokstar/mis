@@ -2,7 +2,7 @@ $(function(){
 
   var arrLang = {
     'en': {
-      mainText: 'We develop <span class= "strong-text">icloud services</span>, <span class= "strong-text">mobile apps</span>' +
+      mainText: 'We develop <span class= "strong-text">cloud services</span>, <span class= "strong-text">mobile apps</span>' +
       ' and &nbsp;<span class= "strong-text">information systems</span> based on open source technologies.' +
       '  From idea to support, from first sketch to production release, we deliver our clients not only an' +
       ' innovative and effective product, but also our result oriented' +
