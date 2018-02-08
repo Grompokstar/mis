@@ -2,11 +2,11 @@ $(function(){
 
   var arrLang = {
     'en': {
-      mainText: 'We come up with <span class= "strong-text" >ideas</span>, develop <span class= "strong-text" >design</span>' +
-      ' for &nbsp;information systems, social services,' +
-      ' online shopping and mobile apps. We create <span class= "strong-text">new technologies</span>' +
-      ' and &nbsp;improve existing ones.' +
-      ' Our projects always find <span class="strong-text">response</span>&nbsp;the hearts of the people.',
+      mainText: 'We develop <span class= "strong-text">icloud services</span>, <span class= "strong-text">mobile apps</span>' +
+      ' and &nbsp;<span class= "strong-text">information systems</span> based on open source technologies.' +
+      '  From idea to support, from first sketch to production release, we deliver our clients not only an' +
+      ' innovative and effective product, but also our result oriented' +
+      ' passion and energy',
 
       contactUs: 'Contact us',
       form_1: 'Please fill out this form and our specialists will contact you, demonstrate the technology and provide' +
